@@ -78,10 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'activities',
-        'USER': 'joonsong',
-        'PASSWORD': 'Sojubobo77!',
-        'HOST': 'localhost',  # Set to your database host
-        'PORT': '3306',       # Default port for MySQL
+        'USER': 'empty',
+        'PASSWORD': 'empty',
+        'HOST': 'localhost',  
+        'PORT': '3306',       
     }
 }
 
