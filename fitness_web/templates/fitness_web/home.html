@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Planner</title>
+</head>
+<body>
+    <h1>Welcome to the Fitness Planner</h1>
+    <p>Click the button below to generate your fitness plan.</p>
+    <form action="{% url 'run_model' %}" method="get">
+        <button type="submit">Generate Fitness Plan</button>
+    </form>
+</body>
+</html>

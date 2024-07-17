@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Planner Results</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fitness Planner Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Day</th>
+                <th>Distance (miles)</th>
+                <th>Calories</th>
+                <th>Type of Effort</th>
+                <th>Predicted Moving Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result.week }}</td>
+                <td>{{ result.day }}</td>
+                <td>{{ result.distance_miles }}</td>
+                <td>{{ result.calories }}</td>
+                <td>{{ result.type_effort }}</td>
+                <td>{{ result.predicted_moving_time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
